@@ -7,15 +7,23 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-?
+ var isThuthy = function(f) {
+... return f ?true : false;
+... }
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-?
+> isThuthy(0);
+false
+> isThuthy(1);
+true
+> isThuthy(null);
+false
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-?
+> isThuthy('null');
+true
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -57,7 +65,7 @@ Crie um método chamado `obterMarcaModelo`, que retorne:
 "Esse carro é um [MARCA] [MODELO]"
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
-?
+carro.obterMarcarModelo = 'Esse carro é um ' + carro.obterMarcar + ' ' + carro.obterModelo;
 
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
